@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import './App.css';
+import logo from './resources/around-town-logo.png'
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+const App = () => (
+    <div>
+        <header>
+            <img class="sign-in-logo" src={logo}/>
+        </header>
+        <AmplifySignOut />
+        <div class="textstuff">
+            This will change things.
+        </div>
     </div>
-  );
-}
+);
 
-export default App;
+export default withAuthenticator(App);
