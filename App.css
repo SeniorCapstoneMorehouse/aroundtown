@@ -166,6 +166,7 @@ header {
   display: flex;
   justify-content: left;
   padding: 30px;
+  padding-top: 100px;
 }
 
 .Nearlogo {
@@ -183,4 +184,11 @@ header {
   display: inline block;
   margin: auto;
   padding: 20px;
+  padding-bottom: 15px;
+}
+
+#map {
+  height: 90vh;
+  width: 70vw;
+  margin: auto;
 }
