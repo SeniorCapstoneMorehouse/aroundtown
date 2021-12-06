@@ -1,0 +1,5 @@
+type Accounts @model {
+  id: ID!
+  name: String!
+  passwords: String
+}
