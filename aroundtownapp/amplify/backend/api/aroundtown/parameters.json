@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "aroundtown",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
